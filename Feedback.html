@@ -1,0 +1,191 @@
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin: 0;
+        }
+        .form-container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .statement-group {
+            margin-bottom: 20px;
+        }
+        .statement-group p {
+            margin: 0 0 8px;
+        }
+        .options {
+            display: flex;
+            justify-content: space-between;
+        }
+        .options input {
+            margin-right: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Customer Feedback Form</h1>
+        <form action="#" method="post">
+<label for="name">Name (Optional)</label>
+            <input type="text" id="name" name="name" placeholder="Your Name">
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age">
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Statements -->
+            <div class="statement-group">
+                <p>I feel satisfied with the service overall</p>
+                <div class="options">
+                    <label><input type="radio" name="satisfaction" value="strongly-disagree"> Strongly Disagree</label>
+                    <label><input type="radio" name="satisfaction" value="disagree"> Disagree</label>
+                    <label><input type="radio" name="satisfaction" value="neutral"> Neutral</label>
+                    <label><input type="radio" name="satisfaction" value="agree"> Agree</label>
+                    <label><input type="radio" name="satisfaction" value="strongly-agree"> Strongly Agree</label>
+                </div>
+            </div>
+
+            <div class="statement-group">
+                <p>The quality of our service is excellent</p>
+                <div class="options">
+                    <label><input type="radio" name="quality" value="strongly-disagree"> Strongly Disagree</label>
+                    <label><input type="radio" name="quality" value="disagree"> Disagree</label>
+                    <label><input type="radio" name="quality" value="neutral"> Neutral</label>
+                    <label><input type="radio" name="quality" value="agree"> Agree</label>
+                    <label><input type="radio" name="quality" value="strongly-agree"> Strongly Agree</label>
+                </div>
+            </div>
+
+            <div class="statement-group">
+                <p>The service met my needs and expectations</p>
+                <div class="options">
+                    <label><input type="radio" name="expectations" value="strongly-disagree"> Strongly Disagree</label>
+                    <label><input type="radio" name="expectations" value="disagree"> Disagree</label>
+                    <label><input type="radio" name="expectations" value="neutral"> Neutral</label>
+                    <label><input type="radio" name="expectations" value="agree"> Agree</label>
+                    <label><input type="radio" name="expectations" value="strongly-agree"> Strongly Agree</label>
+                </div>
+            </div>
+
+            <div class="statement-group">
+                <p>I find the service easy to use</p>
+                <div class="options">
+                    <label><input type="radio" name="expectations" value="strongly-disagree"> Strongly Disagree</label>
+                    <label><input type="radio" name="expectations" value="disagree"> Disagree</label>
+                    <label><input type="radio" name="expectations" value="neutral"> Neutral</label>
+                    <label><input type="radio" name="expectations" value="agree"> Agree</label>
+                    <label><input type="radio" name="expectations" value="strongly-agree"> Strongly Agree</label>
+                </div>
+            </div> 
+
+            <div class="statement-group">
+                <p>The service offers good value for money</p>
+                <div class="options">
+                    <label><input type="radio" name="expectations" value="strongly-disagree"> Strongly Disagree</label>
+                    <label><input type="radio" name="expectations" value="disagree"> Disagree</label>
+                    <label><input type="radio" name="expectations" value="neutral"> Neutral</label>
+                    <label><input type="radio" name="expectations" value="agree"> Agree</label>
+                    <label><input type="radio" name="expectations" value="strongly-agree"> Strongly Agree</label>
+                </div>
+            </div>
+
+            <div class="statement-group">
+                <p>I would recommend the service to others</p>
+                <div class="options">
+                    <label><input type="radio" name="expectations" value="strongly-disagree"> Strongly Disagree</label>
+                    <label><input type="radio" name="expectations" value="disagree"> Disagree</label>
+                    <label><input type="radio" name="expectations" value="neutral"> Neutral</label>
+                    <label><input type="radio" name="expectations" value="agree"> Agree</label>
+                    <label><input type="radio" name="expectations" value="strongly-agree"> Strongly Agree</label>
+                </div>
+            </div>
+
+            <div class="statement-group">
+                <p>I feel valued as a customer</p>
+                <div class="options">
+                    <label><input type="radio" name="expectations" value="strongly-disagree"> Strongly Disagree</label>
+                    <label><input type="radio" name="expectations" value="disagree"> Disagree</label>
+                    <label><input type="radio" name="expectations" value="neutral"> Neutral</label>
+                    <label><input type="radio" name="expectations" value="agree"> Agree</label>
+                    <label><input type="radio" name="expectations" value="strongly-agree"> Strongly Agree</label>
+                </div>
+            </div>
+
+            <div class="statement-group">
+                <p>Quality of our service met my expectations</p>
+                <div class="options">
+                    <label><input type="radio" name="expectations" value="strongly-disagree"> Strongly Disagree</label>
+                    <label><input type="radio" name="expectations" value="disagree"> Disagree</label>
+                    <label><input type="radio" name="expectations" value="neutral"> Neutral</label>
+                    <label><input type="radio" name="expectations" value="agree"> Agree</label>
+                    <label><input type="radio" name="expectations" value="strongly-agree"> Strongly Agree</label>
+                </div>
+            </div>
+
+            <div class="statement-group">
+                <p>Customer service to be helpful and responsive</p>
+                <div class="options">
+                    <label><input type="radio" name="expectations" value="strongly-disagree"> Strongly Disagree</label>
+                    <label><input type="radio" name="expectations" value="disagree"> Disagree</label>
+                    <label><input type="radio" name="expectations" value="neutral"> Neutral</label>
+                    <label><input type="radio" name="expectations" value="agree"> Agree</label>
+                    <label><input type="radio" name="expectations" value="strongly-agree"> Strongly Agree</label>
+                </div>
+            </div>
+
+            <label for="improvement">Which areas do you believe require improvement?</label>
+            <textarea id="improvement" name="improvement" rows="5" placeholder="Write your feedback here..."></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+</body>
+</html>
